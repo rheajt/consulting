@@ -10,9 +10,10 @@
 
         <title>Systems Consultant</title>
 
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <link rel="stylesheet" href="dist/reset.css" />
         <link rel="stylesheet" href="dist/reveal.css" />
-        <link rel="stylesheet" href="dist/theme/serif.css" />
+        <link rel="stylesheet" href="dist/theme/beige.css" />
 
         <!-- Theme used for syntax highlighted code -->
         <link rel="stylesheet" href="plugin/highlight/monokai.css" />
@@ -22,27 +23,80 @@
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <h3>Hi, my name is</h3>
-                    <h1>Jordan Rhea</h1>
+                    <p>Hi, my name is</p>
+                    <h2>Jordan Rhea</h2>
                     <p>Data and Systems developer</p>
-                </section>
-                <section>
                     <p>
-                        I use cloud connections and extensions to existing
-                        software tools to create new solutions
+                        Artisanally, handcrafted extensions built for solutions
+                        specific to your needs.
                     </p>
-                    <img src="images/Office365.jpg" />
-                    <img src="images/google.png" />
                 </section>
-                <section>Slide 3</section>
-                <section>Slide 4</section>
-                <section>Slide 5</section>
+
+                <section>
+                    <h2>This is what I do:</h2>
+                    <ol>
+                        <li class="fragment">
+                            <b>Web development</b> is connecting everything
+                            together to create a cohesive environment between
+                            different softwares
+                        </li>
+
+                        <li class="fragment">
+                            Building <b>systems solutions</b> that address
+                            specific organizational problems
+                        </li>
+
+                        <li class="fragment">
+                            <b>Data consulting</b> and putting together the
+                            tools that small teams of stakeholders can use to
+                            make decisions
+                        </li>
+                    </ol>
+                </section>
+
+                <section
+                    data-background-image="images/systems.png"
+                    data-background-size="contain"
+                    data-background-repeat="no-repeat"
+                ></section>
+
+                <section>
+                    <section>
+                        <h2>Systems Solutions</h2>
+
+                        <p>
+                            Office 365 is a powerful platform filled with tools
+                            that are extensible with a little bit of
+                            customization.
+                        </p>
+
+                        <img src="images/Office365.jpg" />
+                    </section>
+                    <section></section>
+                    <section></section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Data Consulting</h2>
+                    </section>
+                    <section></section>
+                </section>
+
+                <section>
+                    <section>
+                        <h2>Web Development</h2>
+                    </section>
+                    <section></section>
+                </section>
             </div>
 
             <footer class="bottom">
+                <!-- <a href="https://jordanrhea.com"> -->
                 <img
                     src="http://jordanrhea.com/static/9a2245de7aee2ea3f7fa58253f6b766f/206df/jr-icon.webp"
                 />
+                <!-- </a> -->
             </footer>
         </div>
 
@@ -50,6 +104,7 @@
         <script src="plugin/notes/notes.js"></script>
         <script src="plugin/markdown/markdown.js"></script>
         <script src="plugin/highlight/highlight.js"></script>
+        <script src="plugin/zoom/zoom.js"></script>
         <script>
             // More info about initialization & config:
             // - https://revealjs.com/initialization/
@@ -58,8 +113,21 @@
                 hash: true,
 
                 // Learn about plugins: https://revealjs.com/plugins/
-                plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+                plugins: [
+                    RevealMarkdown,
+                    RevealHighlight,
+                    RevealNotes,
+                    RevealZoom,
+                ],
             });
+
+            document.querySelector("footer.bottom img").addEventListener(
+                "mousedown",
+                () => {
+                    console.log("hello world");
+                },
+                false
+            );
         </script>
     </body>
 </html>
