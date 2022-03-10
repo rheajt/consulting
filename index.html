@@ -20,16 +20,23 @@
     </head>
 
     <body>
+        <header class="controls">
+            <a href="https://jordanrhea.com">
+                <img
+                    src="http://jordanrhea.com/static/9a2245de7aee2ea3f7fa58253f6b766f/206df/jr-icon.webp"
+                />
+            </a>
+        </header>
+
         <div class="reveal">
             <div class="slides">
                 <section>
-                    <p>Hi, my name is</p>
                     <h2>Jordan Rhea</h2>
                     <p>Data and Systems developer</p>
-                    <p>
+                    <aside>
                         Artisanally, handcrafted extensions built for solutions
                         specific to your needs.
-                    </p>
+                    </aside>
                 </section>
 
                 <section>
@@ -55,7 +62,7 @@
                 </section>
 
                 <section
-                    data-background-image="images/systems.png"
+                    data-background-image="images/systems-map.png"
                     data-background-size="contain"
                     data-background-repeat="no-repeat"
                 ></section>
@@ -72,13 +79,34 @@
 
                         <img src="images/Office365.jpg" />
                     </section>
-                    <section></section>
+                    <section>
+                        <p>
+                            In order to improve some of the analog systems in
+                            Keystone, I built an app that streamlined the
+                            weekend checkin and checkout procedure.
+                        </p>
+                        <div class="r-stack">
+                            <img
+                                class="fragment"
+                                src="images/student-checkout-2.png"
+                            />
+                            <img
+                                class="fragment"
+                                src="images/student-checkout.png"
+                            />
+                        </div>
+                    </section>
                     <section></section>
                 </section>
 
                 <section>
                     <section>
                         <h2>Data Consulting</h2>
+                        <p>
+                            Using Power BI and Google Data Studio to create
+                            visualizations of the data. Then we have to draw
+                            some conclusions from that data!
+                        </p>
                     </section>
                     <section></section>
                 </section>
@@ -90,14 +118,6 @@
                     <section></section>
                 </section>
             </div>
-
-            <footer class="bottom">
-                <!-- <a href="https://jordanrhea.com"> -->
-                <img
-                    src="http://jordanrhea.com/static/9a2245de7aee2ea3f7fa58253f6b766f/206df/jr-icon.webp"
-                />
-                <!-- </a> -->
-            </footer>
         </div>
 
         <script src="dist/reveal.js"></script>
@@ -120,14 +140,6 @@
                     RevealZoom,
                 ],
             });
-
-            document.querySelector("footer.bottom img").addEventListener(
-                "mousedown",
-                () => {
-                    console.log("hello world");
-                },
-                false
-            );
         </script>
     </body>
 </html>
