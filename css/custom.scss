@@ -1,5 +1,26 @@
+.slides {
+    font-size: 30px;
+}
+
 header.controls {
     position: absolute;
     margin: 1em;
     z-index: 9999;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+}
+
+.black-bg { 
+    display: inline;
+    background-color: black;
+    color: white;
+    padding: 1rem;
+}
+
+.columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
